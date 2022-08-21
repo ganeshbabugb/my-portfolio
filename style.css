@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+html, body {
+  background: #111;
+  color: #aaa;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header-wrap {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 10px 50px 10px 50px;
+  margin: auto;
+  margin-top: 150px;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  transform: perspective(200px) rotateX(10deg);
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #004d40, 0 2px 0 #00483B, 0 3px 0 #004639, 0 4px 0 #004336, 0 5px 0 #004134, 0 6px 0 #003F32, 0 7px 0 #003D30, 0 8px 0 #003A2D, 0 9px 0 #00382B, 0 10px 0 #003528, 0 11px 0 #003225, 0 12px 0 #002F22, 0 13px 0 #002B1E, 0 14px 0 #00281C, 0 15px 0 #001F13, 0 22px 30px rgba(0, 0, 0, 0.9), 0 22px 30px rgba(0, 0, 0, 0.9), 0 22px 15px rgba(0, 0, 0, 0.9), 0 11px 15px rgba(0, 0, 0, 0.9), 0 15px 20px rgba(0, 0, 0, 0.9), 0 15px 11px rgba(0, 0, 0, 0.9), 0 16px 11px rgba(0, 0, 0, 0.9);
+  transition: text-shadow 1s ease 0.2s, color 0.6s ease, transform 1s ease 0.2s, letter-spacing 1s ease 0.2s;
+}
+.header-wrap:hover {
+  transition: text-shadow 1s ease, color 3s ease-in 1s, transform 0.8s ease, letter-spacing 0.8s ease;
+  color: #0A0A0A;
+  text-shadow: -1px -1px 1px #000, 2px 2px 1px #292929;
+  transform: translate(0px, 16px) perspective(200px) rotateX(10deg);
+  letter-spacing: 0.015em;
+}
+
+.footer-wrap {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 10px 50px 10px 50px;
+  margin: auto;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  transform: perspective(200px) rotateX(10deg);
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #004d40, 0 2px 0 #00483B, 0 3px 0 #004639, 0 4px 0 #004336, 0 5px 0 #004134, 0 6px 0 #003F32, 0 7px 0 #003D30, 0 8px 0 #003A2D, 0 9px 0 #00382B, 0 10px 0 #003528, 0 11px 0 #003225, 0 12px 0 #002F22, 0 13px 0 #002B1E, 0 14px 0 #00281C, 0 15px 0 #001F13, 0 22px 30px rgba(0, 0, 0, 0.9), 0 22px 30px rgba(0, 0, 0, 0.9), 0 22px 15px rgba(0, 0, 0, 0.9), 0 11px 15px rgba(0, 0, 0, 0.9), 0 15px 20px rgba(0, 0, 0, 0.9), 0 15px 11px rgba(0, 0, 0, 0.9), 0 16px 11px rgba(0, 0, 0, 0.9);
+  transition: text-shadow 1s ease 0.2s, color 0.6s ease, transform 1s ease 0.2s, letter-spacing 1s ease 0.2s;
+}
+.footer-wrap:hover {
+  transition: text-shadow 1s ease, color 3s ease-in 1s, transform 0.8s ease, letter-spacing 0.8s ease;
+  color: #0A0A0A;
+  text-shadow: -1px -1px 1px #000, 2px 2px 1px #292929;
+  transform: translate(0px, 16px) perspective(200px) rotateX(10deg);
+  letter-spacing: 0.015em;
+}
+
+.paragraph {
+  display: block;
+  padding: 10px;
+  margin: auto;
+  width: 994px;
+  padding-left: 50px;
+  text-align: center;
+;
+}
+.paragraph p {
+  width: auto;
+  text-shadow: 0px 3px 3px #000;
+}
+
+/* Custom Cursor */
+.typed::after {
+  content: "|";
+  display: inline;
+  animation: pulse 1s ease infinite;
+  /* Cursor Animation */
+}
+@keyframes pulse {
+  40% {
+    opacity: 0;
+  }
+  50%, 100% {
+    opacity: 1;
+  }
+}
+
+.header-wrap {
+  font-size: calc( 12px + (25 - 12) * (100vw - 420px) / (1545 - 420));
+}
+@media screen and (max-width: 420px) {
+  .header-wrap {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1545px) {
+  .header-wrap {
+    font-size: 25px;
+  }
+}
+
+.footer-wrap {
+  font-size: calc( 12px + (25 - 12) * (100vw - 420px) / (1545 - 420));
+}
+@media screen and (max-width: 420px) {
+  .footer-wrap {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1545px) {
+  .footer-wrap {
+    font-size: 25px;
+  }
+}
+
+.paragraph {
+ font-size: calc( 10.5px + (30 - 10.5) * (100vw - 420px) / (1053 - 420));
+}
+@media screen and (max-width: 420px) {
+  .paragraph {
+    font-size: 10.5px;
+  }
+}
+@media screen and (min-width: 1053px) {
+  .paragraph {
+    font-size: 30px;
+  }
+}
+
+.heading {
+  position: relative;
+  margin: 150px auto 0 auto;
+  font-family: sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 40px;
+  color: #004d40;
+  text-transform: uppercase;
+  font-family: 'Bree Serif', serif;
+}
+
+.icon {
+  position: relative;
+  margin: 150px auto 0 auto;
+  font-family: sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size:24px;
+}
+.icon svg {
+  width: 28px;
+  display: block;
+  margin: 10px auto;
+}
+.icon svg .arrow {
+  animation: anim 0.35s ease-in alternate infinite;
+}
+@keyframes anim {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+.links {
+  position: fixed;
+  width: auto;
+  height: auto;
+  left: 0;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.links .fl-fl {
+  background: #004d40;
+  border-radius: 0 15px 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 191px;
+  position: relative;
+  margin: 4px 0;
+  left: -157px;
+  z-index: 1000;
+  text-align: right;
+  font: normal normal 10px Arial;
+  -webkit-transition: all 375ms cubic-bezier(0.86, 0, 0.07, 1);
+  -moz-transition: all 375ms cubic-bezier(0.86, 0, 0.07, 1);
+  -ms-transition: all 375ms cubic-bezier(0.86, 0, 0.07, 1);
+  -o-transition: all 375ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 375ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+.links .fl-fl:hover {
+  left: 0;
+}
+.links .fl-fl:hover span, .links .fl-fl:hover .fa {
+  color: #fff;
+}
+.links .fl-fl a {
+  text-decoration: none;
+}
+.links .fl-fl a .fa {
+  transition: all 700ms ease 375ms;
+  float: right;
+  font-size: 20px;
+  color: #000;
+  padding: 10px 0;
+  width: 40px;
+  margin-right: 5px;
+}
+.links .fl-fl a .fa.fa-google-plus {
+  padding: 12px 0;
+  font-size: 18px;
+  margin-right: -1px;
+}
+.links .fl-fl a span {
+  transition: all 700ms ease 427ms;
+  color: #111;
+  text-decoration: none;
+  text-align: center;
+  line-height: 43px !important;
+  vertical-align: top !important;
+}
+
+.external_link {
+  text-decoration: none;
+  color: #004d40;
+}
+
+.external_link:hover {
+  border-bottom: 1px solid;
+}
+
+.about {
+  margin: 100px auto 0 auto;
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Josefin Sans', sans-serif;
+}
